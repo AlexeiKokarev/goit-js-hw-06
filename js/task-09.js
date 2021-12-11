@@ -7,6 +7,6 @@ const refs = {
 };
 
 refs.btnChangeColor.addEventListener('click', function() {
-    document.body.style.backgroundColor = getRandomHexColor();
-    refs.bgColor.textContent = getRandomHexColor();
+    document.body.style.background = getRandomHexColor();
+    refs.bgColor.textContent = document.body.style.background;
 });
